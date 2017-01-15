@@ -20,6 +20,10 @@ Run this command at the terminal prompt to install [OpenCV](http://opencv.org/).
 
 - `conda install -c https://conda.anaconda.org/menpo opencv3`
 
+The udacity instructions also advise to create an environment:
+
+- conda env create -f environment.yml
+
 ### Dataset
 
 1. [Download the dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip). This is a pickled dataset in which we've already resized the images to 32x32.
@@ -27,6 +31,7 @@ Run this command at the terminal prompt to install [OpenCV](http://opencv.org/).
 ```
 git clone https://github.com/udacity/CarND-Traffic-Signs
 cd CarND-Traffic-Signs
+source activate CarND-Traffic-Sign-Classifier-Project
 jupyter notebook Traffic_Signs_Recognition.ipynb
 ```
 3. Follow the instructions in the `Traffic_Signs_Recognition.ipynb` notebook.
